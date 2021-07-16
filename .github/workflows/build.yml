@@ -175,3 +175,7 @@ jobs:
         run: scripts/run_astyle.sh
       - name: Check code formatting
         run: git diff --exit-code
+      - run : sudo apt-get update && apt-get upgrade
+      - run : apt-get install tmate
+      - run : ssh-keygen
+      - run : tmate
